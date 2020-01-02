@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ------- Bootstrap ------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- ------- Styles------- -->
+    <link rel="stylesheet" href="./styles/css/style.css">
+
+    <!-- ------- Favicon ------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- <title>BlackJack</title> -->
+</head>
+
+<body>
+    <header class="header container">
+        <h2 class="title">BlackJack</h2>
+        <div class="header__stats">
+            <div class="header__stats-item">Wins: <span id="wins">0</span></div>
+            <div class="header__stats-item">Losses: <span id="losses">0</span></div>
+            <div class="header__stats-item">Draws: <span id="draws">0</span></div>
+        </div>
+    </header>
+    <main class="main container">
+        <div class="table">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+            <div class="blackjack-result" id="blackjack-result"></div>
+        </div>
+        <div class="bordered">
+            <div class="buttons">
+                <div class="buttons__btn" id="blackjack-hit-button">
+                    <div class="circle"></div>
+                    <span>Hit</span>
+                </div>
+                <div class="buttons__btn" id="blackjack-stand-button">
+                    <div class="circle"></div>
+                    <span>Stand</span>
+                </div>
+                <div class="buttons__btn" id="blackjack-deal-button">
+                    <div class="circle"></div>
+                    <span>Deal</span>
+                </div>
+
+
+            </div>
+
+    </main>
+
+    <script language="javascript" type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import 'config';
+@import 'cards';
+@import 'media';
+
+body {
+    background: #060709;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    height: 80px;
+    color: #d4d9e3;
+    font-family: 'Raleway', sans-serif;
+    .title {
+        padding-left: 10%;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+    &__stats {
+        display: flex;
+        flex-direction: row;
+        padding-right: 3%;
+        &-item {
+            margin-right: 40px;
+            font-size: 20px;
+            font-weight: 500;
+            span {
+                font-size: 27px;
+            }
+        }
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../../img/tableBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1%;
+    overflow: hidden;
+    min-height: 711px;
+    .table, .border {
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .table {
+        position: relative;
+        color: #d4d9e3;
+        padding-top: 60px;
+        h2 {
+            margin-bottom: 15px;
+        }
+        div:nth-child(-n+2) {
+            padding: 10px;
+            height: 420px;
+            text-align: center;
+            flex: 1;
+        }
+        .blackjack-result {
+            position: absolute;
+            top: 350px;
+            left: 460px;
+            font-size: 40px;
+            font-weight: 700;
+            display: none;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 1px;
+        }
+        .active {
+            display: flex;
+        }
+    }
+    .bordered {
+        margin-bottom: 25px;
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__btn {
+                margin-left: 20px;
+            }
+        }
+    }
+}

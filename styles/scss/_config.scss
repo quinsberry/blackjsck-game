@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin media-md {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+
+
+
+/* Buttons */
+
+.buttons__btn {
+    background: #1e0300;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-flex;
+    height: 40px;
+    width: 120px;
+    border: 2px solid #BFC0C0;
+    margin: 0px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+        .circle {
+            width: 200%;
+            height: 500%;
+            opacity: 1;
+            top: -70px;
+            left: -70px;
+        }
+        span {
+            color: #2D3142;
+        }
+    }
+    .circle {
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        line-height: 40px;
+        border-radius: 50%;
+        background: #BFC0C0;
+        position: absolute;
+        transition: all .5s ease-Out;
+        top: 20px;
+        left: 70px;
+    }
+    span {
+        position: relative;
+        transition: all .45s ease-Out;
+        color: #BFC0C0;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+}
