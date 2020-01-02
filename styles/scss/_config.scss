@@ -6,18 +6,18 @@
     padding: 0;
 }
 
+@mixin media-mobm {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+@mixin media-mobl {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
 @mixin media-sm {
     @media screen and (max-width: 768px) {
-        @content;
-    }
-}
-@mixin media-md {
-    @media screen and (max-width: 992px) {
-        @content;
-    }
-}
-@mixin media-lg {
-    @media screen and (max-width: 1199px) {
         @content;
     }
 }

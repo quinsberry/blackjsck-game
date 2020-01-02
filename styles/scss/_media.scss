@@ -1,3 +1,50 @@
-@include media-lg {
-    
+@include media-sm {
+  body {
+    .header {
+      margin-top: 0;
+      margin-bottom: 10px;
+      .title {
+        font-size: 1.7rem !important;
+        padding-left: 4%;
+        padding-bottom: 0;
+        margin-bottom: 3px;
+      }
+      &__stats {
+        padding-right: 1%;
+        &-item {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .main {
+      min-height: 611px;
+      .table {
+        div {
+          img {
+            height: 120px;
+          }
+        }
+        div:nth-child(-n+2) {
+          padding: 10px 0px;
+          height: 420px;
+          text-align: center;
+          flex: 1;
+        }
+        .blackjack-result {
+          top: 10px;
+          left: 120px;
+          font-size: 30px;
+          font-weight: 700;
+          display: none;
+          font-family: 'Raleway', sans-serif;
+          letter-spacing: 1px;
+        }
+        .active {
+          display: flex;
+        }
+      }
+    }
+  }    
 }
+

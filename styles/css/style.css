@@ -77,6 +77,54 @@
   margin-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  body .header {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  body .header .title {
+    font-size: 1.7rem !important;
+    padding-left: 4%;
+    padding-bottom: 0;
+    margin-bottom: 3px;
+  }
+  body .header__stats {
+    padding-right: 1%;
+  }
+  body .header__stats-item {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  body .main {
+    min-height: 611px;
+  }
+  body .main .table div img {
+    height: 120px;
+  }
+  body .main .table div:nth-child(-n+2) {
+    padding: 10px 0px;
+    height: 420px;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .main .table .blackjack-result {
+    top: 10px;
+    left: 120px;
+    font-size: 30px;
+    font-weight: 700;
+    display: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+  }
+  body .main .table .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 body {
   background: #060709;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
